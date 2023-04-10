@@ -20,7 +20,7 @@ function calculateScore(userGuess, timeLeft) {
 
     const answerWeight = 0.75;
     const timerWeight = 0.25;
-    const maxScore = 20;
+    const maxScore = 100;
 
     let score = (((1 - Math.abs(userGuess - xCountPercentage) / xCountPercentage) * answerWeight) + ((1 - Math.abs(timeLeft - defaultTimer) / defaultTimer) * timerWeight)) * maxScore;
 
