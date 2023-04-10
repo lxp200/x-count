@@ -1,0 +1,45 @@
+<!-- Lucas' game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Count</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/x-count.css">
+</head>
+<body>
+
+    <div id="main-container">
+
+        <h1>X-Count</h1>
+
+        <div id="game">
+
+            <p>A sequence of characters will appear for a limited time in the frame below. You must guess the correct percentage of <span class="x">X</span>. A quick answer will always score more points.</p>
+
+            <button id="start">Start</button>
+
+            <form onSubmit="return false;">
+                <input id="answer" type="text" placeholder="0 - 100 (%)" />
+                <button id="submit">Guess</button>
+            </form>
+
+            <div id="timer-container" class="timer-green"><span id="sequence-timer"></span> seconds left</div>
+
+            <div id="sequence-grid"></div>
+
+            <div id="game-scores">
+                <p>Current Score: <span id="game-current-score">0</span></p>
+                <p>Highscore: <span id="game-highscore">0</span</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/x-count.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Silkscreen', monospace;
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+/* smaller font on small windows */
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* paragraphs */
+p {
+    margin: 25px auto;
+}
+
+/* links */
+a {
+    color: hsl(340, 100%, 50%);
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px dashed hsl(340, 100%, 50%);
+}
+
+/* headings */
+h1, h2, h3 {
+    margin: 25px auto;
+}
+
+h1 {
+    background: black;
+    color: white;
+}
+
+/* various elements */
+button,
+input {
+    background: white;
+    font-family: 'Silkscreen', monospace;
+    font-size: 1em;
+    margin: 0 auto 25px auto;
+    padding: 10px;
+    max-width: 256px;
+}
+
+button {
+    border: 2px solid hsl(340, 100%, 50%);
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsla(340, 100%, 50%, .25);
+}
+
+button:disabled,
+button[disabled] {
+  border: 2px solid hsla(0, 0%, 0%, .25);
+  background: hsla(0, 0%, 0%, .1);
+  color: hsla(0, 0%, 0%, .25);
+}
+
+input {
+    border: 2px solid black;
+}
+
+/* wrapper */
+#main-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* the scores displayed near the bottom of each game */
+#game-scores {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#game-scores p span {
+    padding: 5px;
+}
+
+/* the back to homepage button at the bottom of each game */
+#back {
+    margin: 25px 0;
+}
+
+#back a::before {
+    content: '<< ';
+}
